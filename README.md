@@ -23,7 +23,7 @@
 
 ## Clone this project
    ```
-   git clone https://github.com/emon51/Portfolio-Website-Django.git
+https://github.com/emon51/django_blogging_project.git
    ```
 
 
