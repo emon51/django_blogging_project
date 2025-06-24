@@ -1,0 +1,16 @@
+
+{% extends 'html/base.html' %}
+
+{% block title %} view_post {% endblock %}
+
+{% block heading %} {{ post.title }} {% endblock %}
+
+{% block body %}
+<div class="view-post">
+    <span> {{post.content }} </span> <br> <br>
+    
+    <button onclick = window.location.href="/home"> Home </button> <br>
+    <a href="/home"> Home </a>
+</div>
+
+{% endblock %}

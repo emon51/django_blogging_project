@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'base.css' %}" />
+    <title> {% block title %} home {% endblock %} </title>
+</head>
+
+<body>
+    <div class="heading-block">
+        <h1>   {% block heading %} Emon's Blog {% endblock %} </h1>
+    </div>
+
+    {% block body %}
+    <div class="post-block">
+        {% for post in objects %}
+        <div class="post">
+            <div class='post-title-time'> 
+                <h3> 
+                    <a href="/view_post/{{post.id}}"> {{ post.title }} </a>
+                </h3>
+                <small> {{ post.created_at }} </small>
+            </div>
+            <span> {{ post.content|truncatewords:5 }} <a href="/view_post/{{post.id}}">more</a> </span>
+        </div>
+        {% endfor %}
+    </div>
+    {% endblock %}
+</body>
+
+</html>

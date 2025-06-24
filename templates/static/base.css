@@ -1,0 +1,28 @@
+
+
+.heading-block {
+    text-align: center;
+    color: blue;
+}
+
+.post-block {
+
+}
+
+.post {
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 5px;
+}
+
+.post-title-time {
+    line-height: 2px;
+    margin-bottom: 15px;
+}
+
+.view-post {
+    text-align: justify;
+    padding-right: 300px;
+    padding-left: 300px;
+}
